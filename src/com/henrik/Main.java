@@ -1,8 +1,9 @@
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+package com.henrik;
+//import javafx.application.Application;
+//import javafx.fxml.FXMLLoader;
+//import javafx.scene.Parent;
+//import javafx.scene.Scene;
+//import javafx.stage.Stage;
 import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -25,17 +26,15 @@ public class Main{
     public static void main(String[] args) throws ClassNotFoundException{
         //launch(args);
         String url = "jdbc:sqlite:/home/hriskaer/kode/comp_sci/Portfolio_3/data.db";
-        DataConnection DM = new DataConnection(url);
         try {
-            DM.connect();
+            System.out.println("Attempting database connection...");
+            DataConnection DC = new DataConnection(url);
+            System.out.println("Database connection successful!");
+            DC.pickCourse("1");
+            DC.pickStudent("1");
+            DC.close();
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                DM.close();
-            } catch (SQLException d) {
-                d.printStackTrace();
-            }
         }
     }
 }

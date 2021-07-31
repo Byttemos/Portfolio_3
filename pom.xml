@@ -17,8 +17,35 @@
     </dependencies>
 
     <properties>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
     </properties>
+
+<!-- include below build tag to your existing pom.xml  -->
+<build>
+    <sourceDirectory>src</sourceDirectory>
+ <plugins>
+     <plugin>
+
+                <!-- Building an executable jar -->
+
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                  <archive>
+                    <manifest>
+
+                    <!-- give full qualified name of your main class-->
+                      <mainClass>com.henrik.Main</mainClass>
+
+                    </manifest>
+                  </archive>
+                </configuration>
+    </plugin>
+ </plugins>
+</build>
+
+
 
 </project>

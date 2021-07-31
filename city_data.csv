@@ -1,10 +1,10 @@
-ID, City, Country, Postal code
-1, Nykøbing F, Denmark, 4800
-2, Karlskrona, Sweden, NULL
-3, Billund, Denmark, 7190
-4, Sorø, Denmark, 4180
-5, Eskildstrup, Denmark, 4863
-6, Odense, Denmark, 5000
-7, Stockholm, Sweden, NULL
-8, Tølløse, Denmark, 4340
-9, Jyllinge, Denmark, 4040
+ID,City,Country,PostalCode
+1,Nykøbing F,Denmark,4800
+2,Karlskrona,Sweden,NULL
+3,Billund,Denmark,7190
+4,Sorø,Denmark,4180
+5,Eskildstrup,Denmark,4863
+6,Odense,Denmark,5000
+7,Stockholm,Sweden,NULL
+8,Tølløse,Denmark,4340
+9,Jyllinge,Denmark,4040
